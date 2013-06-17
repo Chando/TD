@@ -1,16 +1,7 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using Units.Abstractions.Traits;
 
-namespace TowerDefence.Units
+namespace Units.Abstractions
 {
-    public interface IEnemy
-    {
-        int HitPoints;
-        int LifeReduction;
-        int CurrencyReward;
-        int Speed;
-    }
+    public interface IEnemy : IAttack, ICostLives, IReward
+    { }
 }

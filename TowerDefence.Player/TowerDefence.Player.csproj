@@ -4,11 +4,11 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{BA87A26A-7D4B-4866-BD48-77B518DA312D}</ProjectGuid>
+    <ProjectGuid>{21AB722E-B02D-444A-8922-DBDB3373E6C6}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>Units</RootNamespace>
-    <AssemblyName>Units</AssemblyName>
+    <RootNamespace>TowerDefence.Player</RootNamespace>
+    <AssemblyName>TowerDefence.Player</AssemblyName>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
   </PropertyGroup>
@@ -39,22 +39,9 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Abstractions\IEnemy.cs" />
-    <Compile Include="Abstractions\Traits\IAttack.cs" />
-    <Compile Include="Abstractions\Traits\ICostLives.cs" />
-    <Compile Include="Abstractions\Traits\IReward.cs" />
-    <Compile Include="Implementation\Enemy.cs" />
-    <Compile Include="Implementation\EnemyFactory.cs" />
-    <Compile Include="Implementation\Traits\StandardCostLives.cs" />
-    <Compile Include="Implementation\Traits\StandardAttack.cs" />
-    <Compile Include="Implementation\Traits\StandardReward.cs" />
+    <Compile Include="Player.cs" />
+    <Compile Include="PlayerFactory.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-  </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\TowerDefence.Player\TowerDefence.Player.csproj">
-      <Project>{21AB722E-B02D-444A-8922-DBDB3373E6C6}</Project>
-      <Name>TowerDefence.Player</Name>
-    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
